@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="/static/css/homepage.css">
+</head>
+<body>
+    <div class="ui fixed borderless huge menu">
+        <div class="ui container grid">
+          <div class="computer only row">
+            <a class="header item" href="/">Ani Bot Project</a>
+            <a class="header item" href="/animelist">Anime List</a>
+            <a class="header item" href="/anibot">Ani Bot</a>
+            <div class="right menu">
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="content" id="blur">
+      <Center>
+        <h1>Selamat Datang di Ani bot</h1>
+        <h2>Website yang dapat membantu kamu mendapat informasi tentang anime</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="box">
+        <a class="btn" onclick="toggle()">
+          Instruksi
+        </a> 
+        <a class="btn" href="/anibot">
+          Pergi ke Ani Bot
+        </a>
+        </div>
+      </Center> 
+    </div>
+    <br>
+    <br>
+    <div class="popup" id="popup">
+      <center>
+      <h1>Petunjuk</h1>
+      </center>
+      <h2>Chatbot hanya dapat mengenali 3 pola dan hanya dapat mengenali bahasa indonesia yaitu:</h2>
+      <h3>1. Pola untuk mencari anime yang mirip dengan anime apa</h3>
+      <a>Kata kunci: "anime mirip"</a><br>
+      <a>Contoh: anime mirip tokyo ghoul</a>
+      <h3>2. Pola untuk mencari anime dengan genre dan season tertentu</h3>
+      <a>Kata kunci: "anime (genre) season (season)"</a><br>
+      <a>Contoh: anime aksi musim semi 2021</a>
+      <h3>3. Pola untuk mencari judul dari karakter suatu anime</h3>
+      <a>Kata kunci: "karakter (nama karakter) dari anime apa"</a><br>
+      <a>Contoh: karakter anya forger dari anime apa?</a>
+      <br>
+      <br>  
+      <center>
+      <div id="box2">
+        <a class="btn2" onclick="toggle()">
+          Tutup
+        </a> 
+        <a class="btn2" href="/anibot">
+          Pergi ke Ani Bot
+        </a>
+      </div>
+      </center>
+      <br>
+      <br>
+    </div>
+    <script>
+      function toggle(){
+        var blur= document.getElementById('blur');
+        blur.classList.toggle('active');
+        var popup= document.getElementById('popup');
+        popup.classList.toggle('active');
+      }
+    </script>
+
+</body>
+</html>

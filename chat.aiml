@@ -1,0 +1,102 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category>
+<pattern>    
+anime mirip *
+    </pattern>
+
+<template>
+anime yang mirip dengan <star /> adalah 
+    </template>
+</category>
+
+<category>
+<pattern>    
+anime seperti *
+    </pattern>
+
+<template>
+anime yang mirip dengan <star /> adalah 
+    </template>
+</category>
+
+<category>
+<pattern>    
+rekomendasi anime yang mirip *
+    </pattern>
+
+<template>
+anime yang mirip dengan <star /> adalah 
+    </template>
+</category>
+
+<category>
+<pattern>    
+anime yang mirip *
+    </pattern>
+
+<template>
+anime yang mirip dengan <star /> adalah 
+    </template>
+</category>
+
+<category>
+<pattern>    
+anime yang mirip *
+    </pattern>
+
+<template>
+anime yang mirip <star /> adalah 
+    </template>
+</category>
+
+<category>
+<pattern>    
+anime * musim *
+    </pattern>
+
+<template>
+anime <star index = "1"/> musim <star index = "2"/> antara lain 
+    </template>
+</category>
+
+<category>
+<pattern>    
+rekomendasi anime bergenre * di musim *
+    </pattern>
+
+<template>
+anime <star index = "1"/> musim <star index = "2"/> antara lain 
+    </template>
+</category>
+
+<category>
+<pattern>    
+judul anime karakter *
+    </pattern>
+
+<template>
+karakter <star /> berasal dari anime 
+    </template>
+</category>
+
+<category>
+<pattern>    
+karakter * dari anime apa
+    </pattern>
+
+<template>
+karakter <star /> berasal dari anime 
+    </template>
+</category>
+
+<category>
+<pattern>    
+* dari anime apa
+    </pattern>
+
+<template>
+karakter <star /> berasal dari anime 
+    </template>
+</category>
+</aiml>

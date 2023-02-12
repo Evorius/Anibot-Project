@@ -1,0 +1,64 @@
+body{
+    color: black;
+    background-color: azure;
+  }
+  .ui.fixed.borderless.menu {
+    background-color: darkred;
+  }
+  
+  .ui .computer.only .item {
+    color: #fff;
+  }
+  
+  .ui .computer.only .item:hover {
+    background: grey !important;
+    color: #fff !important;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .ui .computer .item.active {
+    background: #00ba49;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  #myInput {
+    margin-left: 82.5%;
+    width:15%;
+  }
+  .row{
+    width:100%;
+  }
+  .styled-table {
+    margin-left:auto; 
+    margin-right:auto;
+    border-collapse: collapse;
+    width:95%;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  .styled-table thead tr {
+      background-color: #be0202;
+      color: #ffffff;
+      text-align: left;
+  }
+  .styled-table th,
+  .styled-table td {
+      padding: 12px 15px;
+  }
+  .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    }
+
+  .styled-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+  .styled-table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+  .styled-table tbody tr.active-row {
+      font-weight: bold;
+      color: #009879;
+  }

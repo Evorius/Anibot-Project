@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani Bot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="/static/css/chatbot.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="ui fixed borderless huge menu">
+      <div class="ui container grid">
+        <div class="computer only row">
+          <a class="header item" href="/">Ani Bot Project</a>
+          <a class="header item" href="/animelist">Anime List</a>
+          <a class="header item" href="/anibot">Ani Bot</a>
+          <div class="right menu"> 
+          </div>
+        </div>
+      </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetByMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <br>
+        <br>
+        <br>
+    <!-- <center>
+      <h1>
+        Ani Bot
+      </h1>
+    </center> -->
+    <!-- <div class="box"></div> -->
+    <div class="boxed">
+      <!-- <div> -->
+        <div id="chatbox">
+          <p class="botText">
+            <span>Hallo!,Saya Ani Bot</span>
+          </p>
+          <p class="botText">
+            <span>Bot yang bisa menjawab pertanyaan tentang anime</span>
+          </p>
+          <p class="botText">
+            <span>Silahkan masukkan pertanyaan anda</span>
+          </p>
+        </div>
+      <!-- </div> -->
+    </div>
+    <div class="boxed2">
+      <div id="userInput">
+        <center>
+          <input id="textInput" type="text" name="msg" placeholder="Ketik Disini..." />
+        </center>
+      </div>
+      <script>
+        function getBotResponse() {
+          var rawText = $("#textInput").val();
+          if(rawText != ''){
+          var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+          document
+            .getElementById("userInput")
+            .scrollIntoView({ block: "start", behavior: "smooth" });
+          $.get("/get", { msg: rawText }).done(function(data) {
+            var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+            $("#chatbox").append(botHtml);
+            document
+              .getElementById("userInput")
+              .scrollIntoView({ block: "start", behavior: "smooth" });
+          });
+        }
+        }
+        $("#textInput").keypress(function(e) {
+          if (e.which == 13) {
+            getBotResponse();
+          }
+        });
+      </script>
+    </div>
+
+  </body>
+</html>
